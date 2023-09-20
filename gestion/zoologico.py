@@ -21,7 +21,7 @@ class Zoologico:
     def cantidadTotalAnimales(cls):
         cantotalanimales = 0
         for i in range(0,len(cls._zonas),1):
-            if cls._zonas[i].getnombre() == cls.getnombre():
+            if cls._zonas[i].getNombre() == cls.getNombre():
                 cantotalanimales += cls._zonas[i].cantidadAnimales()
         return cantotalanimales
 
