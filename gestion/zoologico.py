@@ -3,6 +3,7 @@ class Zoologico:
     def __init__(self,nombre,ubicacion):
         self._nombre = nombre
         self._ubicacion = ubicacion
+    
     def getNombre(self):
         return self._nombre
     def setNombre(self,nombre):
@@ -14,14 +15,14 @@ class Zoologico:
         self._ubicacion = ubicacion
     
     @classmethod
-    def getZonas(cls):
+    def getZona(cls):
         return cls._zonas
     
     @classmethod
     def cantidadTotalAnimales(cls):
         cantotalanimales = 0
         for i in range(0,len(cls._zonas),1):
-            if cls._zonas[i].getNombre() == cls.getNombre():
+            if cls._zonas[i].getZoo.getNombre() == cls.getNombre():
                 cantotalanimales += cls._zonas[i].cantidadAnimales()
         return cantotalanimales
 
