@@ -7,6 +7,7 @@ class Animal:
         self._habitat = habitat
         self._genero = genero
         Animal._totalAnimales += 1
+
     
     def getNombre(self):
         return self._nombre
@@ -38,11 +39,11 @@ class Animal:
     
     @classmethod
     def totalPorTipo(cls):
-        from mamifero import Mamifero
-        from ave import Ave
-        from reptil import Reptil
-        from pez import Pez
-        from anfibio import Anfibio
+        from .mamifero import Mamifero
+        from .ave import Ave
+        from .reptil import Reptil
+        from .pez import Pez
+        from .anfibio import Anfibio
         return "Mamifero: ",Mamifero.cantidadMamiferos,"\n","Aves: ",Ave.cantidadAves,"\n","Reptiles: ",Reptil.cantidadReptiles,"\n","Peces: ",Pez.cantidadPeces,"\n","Anfibios: ",Anfibio.cantidadAnfibios
     
     def toString(self):
