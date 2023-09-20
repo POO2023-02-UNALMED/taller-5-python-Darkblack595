@@ -1,17 +1,13 @@
-from animal import Animal
+from zooAnimales.animal import Animal
 class Pez(Animal):
     _listado = []
     salmones = 0
     bacalaos = 0
     totalPeces = 0
-    def __init__(self,nombre,edad,habitat,genero,colorEscamas,cantidadAletas):
+    def __init__(self,nombre = None,edad = None,habitat = None,genero = None,colorEscamas = None,cantidadAletas = None):
         super().__init__(nombre,edad,habitat,genero)
         self._colorEscamas = colorEscamas
         self._cantidadAletas = cantidadAletas
-        Pez._listado.append(self)
-        totalPeces += 1
-    def __init__(self):
-        super().__init__("",0,"","")
         Pez._listado.append(self)
         totalPeces += 1
 

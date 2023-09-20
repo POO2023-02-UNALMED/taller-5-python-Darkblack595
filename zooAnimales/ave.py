@@ -1,19 +1,15 @@
-from animal import Animal
+from zooAnimales.animal import Animal
 class Ave(Animal):
     _listado = []
     halcones = 0
     aguilas = 0
     totalAves = 0
-    def __init__(self,nombre,edad,habitat,genero,colorPlumas):
+    def __init__(self,nombre = None,edad  =  None,habitat = None,genero = None,colorPlumas = None):
         super().__init__(nombre,edad,habitat,genero)
         self._colorPlumas = colorPlumas
         Ave._listado.append(self)
         totalAves += 1
-    def __init__(self):
-        super().__init__("",0,"","")
-        Ave._listado.append(self)
-        totalAves += 1
-    
+
     def getColorPlumas(self):
         return self._colorPlumas
     def setColorPlumas(self,colorPlumas):
