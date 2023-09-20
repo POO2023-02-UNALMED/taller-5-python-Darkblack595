@@ -1,3 +1,4 @@
+from zooAnimales.animal import Animal
 class Zona:
     _animales = []
     def __init__(self,nombre = None,zoo=None):
