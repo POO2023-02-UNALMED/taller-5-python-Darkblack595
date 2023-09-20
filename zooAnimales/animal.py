@@ -43,7 +43,7 @@ class Animal:
         from .reptil import Reptil
         from .pez import Pez
         from .anfibio import Anfibio
-        return "Mamifero: ",Mamifero.cantidadMamiferos,"\nAves: ",Ave.cantidadAves,"\nReptiles: ",Reptil.cantidadReptiles,"\nPeces: ",Pez.cantidadPeces,"\nAnfibios: ",Anfibio.cantidadAnfibios
+        return "Mamifero: "+str(Mamifero.cantidadMamiferos)+"\nAves: "+str(Ave.cantidadAves)+"\nReptiles: "+str(Reptil.cantidadReptiles)+"\nPeces: "+str(Pez.cantidadPeces)+"\nAnfibios: "+str(Anfibio.cantidadAnfibios)
     
     def toString(self):
         return "Mi nombre es ",self._nombre,", tengo una edad de ",self._edad,", habito en ",self._habitat," y mi genero es ",self._genero
