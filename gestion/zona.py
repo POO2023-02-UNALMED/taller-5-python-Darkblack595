@@ -1,7 +1,7 @@
 from zooAnimales.animal import Animal
 class Zona:
     _animales = []
-    def __init__(self,nombre = None,zoo=None):
+    def __init__(self,nombre ,zoo=None):
         self._nombre = nombre
         self._zoo = zoo
     
@@ -25,4 +25,7 @@ class Zona:
     
     @classmethod
     def cantidadAnimales(cls):
-        return len(cls._animales)
+        total = 0
+        for animal in cls._animales:
+            total += 1  
+        return total
