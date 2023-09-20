@@ -1,3 +1,4 @@
+from gestion.zona import Zona
 class Zoologico:
     _zonas = []
     def __init__(self,nombre,ubicacion):
@@ -22,8 +23,9 @@ class Zoologico:
     def cantidadTotalAnimales(cls):
         cantotalanimales = 0
         for i in range(0,len(cls._zonas),1):
-            if cls._zonas[i].getZoo.getNombre() == cls.getNombre():
-                cantotalanimales += cls._zonas[i].cantidadAnimales()
+            zona = cls._zonas.get(i)
+            if zona.getZoo().getNombre() == cls.getNombre():
+                cantotalanimales += zona.cantidadAnimales()
         return cantotalanimales
 
     @classmethod
