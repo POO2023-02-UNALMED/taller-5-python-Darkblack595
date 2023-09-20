@@ -10,6 +10,10 @@ class Mamifero(Animal):
         self._patas = patas
         Mamifero._listado.append(self)
         totalmamiferos += 1
+    def __init__(self):
+        super().__init__("",0,"","")
+        Mamifero._listado.append(self)
+        totalmamiferos += 1
 
     def getPelaje(self):
         return self._pelaje
