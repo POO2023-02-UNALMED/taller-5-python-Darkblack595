@@ -8,6 +8,10 @@ class Ave:
         self._colorPlumas = colorPlumas
         Ave._listado.append(self)
         totalAves += 1
+    def __init__(self):
+        super().__init__("",0,"","")
+        Ave._listado.append(self)
+        totalAves += 1
     
     def getColorPlumas(self):
         return self._colorPlumas

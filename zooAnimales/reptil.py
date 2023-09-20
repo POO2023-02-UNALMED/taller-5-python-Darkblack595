@@ -9,6 +9,10 @@ class Reptil:
         self._largoCola = largoCola
         Reptil._listado.append(self)
         totalReptiles += 1
+    def __init__(self):
+        super().__init__("",0,"","")
+        Reptil._listado.append(self)
+        totalReptiles += 1
     
     def getColorEscamas(self):
         return self._colorEscamas

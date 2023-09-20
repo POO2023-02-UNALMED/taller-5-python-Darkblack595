@@ -9,6 +9,10 @@ class Anfibio:
         self._venenoso = venenoso
         Anfibio._listado.append(self)
         totalAnfibios += 1
+    def __init__(self):
+        super().__init__("",0,"","")
+        Anfibio._listado.append(self)
+        totalAnfibios += 1
 
     def getColorPiel(self):
         return self._colorPiel

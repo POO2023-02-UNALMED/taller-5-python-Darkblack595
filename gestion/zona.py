@@ -3,6 +3,9 @@ class Zona:
     def __init__(self,nombre,zoo):
         self._nombre = nombre
         self._zoo = zoo
+    def __init__(self,nombre):
+        self._nombre = nombre
+        self._zoo = None
     
     def getNombre(self):
         return self._nombre

@@ -9,6 +9,10 @@ class Pez:
         self._cantidadAletas = cantidadAletas
         Pez._listado.append(self)
         totalPeces += 1
+    def __init__(self):
+        super().__init__("",0,"","")
+        Pez._listado.append(self)
+        totalPeces += 1
 
     def getColorEscamas(self):
         return self._colorEscamas
