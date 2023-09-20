@@ -8,7 +8,7 @@ class Animal:
         self._genero = genero
         Animal._totalAnimales += 1
     def __init__(self):
-        Animal.totalAnimales += 1
+        Animal._totalAnimales += 1
     
     def getNombre(self):
         return self._nombre
