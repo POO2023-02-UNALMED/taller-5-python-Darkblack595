@@ -18,7 +18,7 @@ class Anfibio(Animal):
     
     def getVenenoso(self):
         return self._venenoso
-    def setVenenoso(self,venenoso):
+    def isVenenoso(self,venenoso):
         self._venenoso = venenoso
     
     @classmethod
