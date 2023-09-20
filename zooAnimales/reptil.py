@@ -9,7 +9,7 @@ class Reptil(Animal):
         self._colorEscamas = colorEscamas
         self._largoCola = largoCola
         Reptil._listado.append(self)
-        totalReptiles += 1
+        Reptil.totalReptiles += 1
     
     def getColorEscamas(self):
         return self._colorEscamas

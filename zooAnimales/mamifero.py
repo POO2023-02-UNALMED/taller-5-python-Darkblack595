@@ -9,7 +9,7 @@ class Mamifero(Animal):
         self._pelaje = pelaje
         self._patas = patas
         Mamifero._listado.append(self)
-        totalmamiferos += 1
+        Mamifero.totalmamiferos += 1
 
     def getPelaje(self):
         return self._pelaje

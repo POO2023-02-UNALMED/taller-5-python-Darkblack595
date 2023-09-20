@@ -9,7 +9,7 @@ class Anfibio(Animal):
         self._colorPiel = colorPiel
         self._venenoso = venenoso
         Anfibio._listado.append(self)
-        totalAnfibios += 1
+        Anfibio.totalAnfibios += 1
 
     def getColorPiel(self):
         return self._colorPiel

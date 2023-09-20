@@ -9,7 +9,7 @@ class Pez(Animal):
         self._colorEscamas = colorEscamas
         self._cantidadAletas = cantidadAletas
         Pez._listado.append(self)
-        totalPeces += 1
+        Pez.totalPeces += 1
 
     def getColorEscamas(self):
         return self._colorEscamas
