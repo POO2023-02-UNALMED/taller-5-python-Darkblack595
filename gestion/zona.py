@@ -25,7 +25,4 @@ class Zona:
     
     @classmethod
     def cantidadAnimales(cls):
-        total = 0
-        for animal in cls._animales:
-            total += 1  
-        return total
+        return len(cls._animales)
