@@ -42,3 +42,6 @@ class Pez(Animal):
     @classmethod
     def cantidadPeces(cls):
         return cls.totalPeces
+    
+    def movimiento(self):
+        return "nadar"

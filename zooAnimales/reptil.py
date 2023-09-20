@@ -42,3 +42,6 @@ class Reptil(Animal):
     @classmethod
     def cantidadReptiles(cls):
         return cls.totalReptiles
+    
+    def movimiento(self):
+        return "reptar"

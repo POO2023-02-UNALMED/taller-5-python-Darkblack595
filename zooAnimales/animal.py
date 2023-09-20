@@ -1,12 +1,12 @@
 class Animal:
     _totalAnimales = 0
-    _zona = []
     def __init__(self,nombre,edad,habitat,genero):
         self._nombre = nombre
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
         Animal._totalAnimales += 1
+        self.zona = None
     
     def getNombre(self):
         return self._nombre
@@ -28,9 +28,8 @@ class Animal:
     def setGenero(self,genero):
         self._genero = genero
     
-    @classmethod
-    def getZona(cls):
-        return cls._zona
+    def getZona(self):
+        return self._zona
     
     @classmethod
     def getTotalAnimales(cls):
@@ -48,3 +47,5 @@ class Animal:
     def toString(self):
         return "Mi nombre es "+self._nombre+", tengo una edad de "+str(self._edad)+", habito en "+self._habitat+" y mi genero es "+self._genero
     
+    def movimiento(self):
+        return "desplazarse"
