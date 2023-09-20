@@ -41,4 +41,4 @@ class Mamifero(Animal):
     
     @classmethod
     def cantidadMamiferos(cls):
-        return cls.totalMamiferos
+        return cls.totalmamiferos
